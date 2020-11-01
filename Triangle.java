@@ -13,4 +13,18 @@ public class Triangle {
     v3 = new Point(x3,y3) ;
   }
 
+  public double getPerimeter() {
+    return (v1.distanceTo(v2) + v2.distanceTo(v3) + v1.distanceTo(v3)) ;
+  }
+
+  public double getArea() {
+    double semiPerm = (getPerimeter() / 2) ;
+    return (Math.sqrt(semiPerm *
+                    (semiPerm - v1.distanceTo(v2)) *
+                    (semiPerm - v2.distanceTo(v3)) *
+                    (semiPerm - v1.distanceTo(v3)))) ;
+  }
+
+
+
 }

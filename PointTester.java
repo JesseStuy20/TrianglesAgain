@@ -10,6 +10,8 @@ public class PointTester {
     System.out.println(p2.equals(p3)) ;
     Point p4 = new Point (3.0,0.0) ;
     Triangle t1 = new Triangle(p1,p2,p4) ;
+    System.out.println(t1.getPerimeter()) ;
+    System.out.println(t1.getArea()) ;
   }
 
 }
