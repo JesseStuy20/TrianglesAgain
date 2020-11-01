@@ -12,6 +12,7 @@ public class PointTester {
     Triangle t1 = new Triangle(p1,p2,p4) ;
     System.out.println(t1.getPerimeter()) ;
     System.out.println(t1.getArea()) ;
+    System.out.println(t1.classify()) ;
   }
 
 }

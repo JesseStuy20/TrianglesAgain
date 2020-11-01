@@ -25,6 +25,34 @@ public class Triangle {
                     (semiPerm - v1.distanceTo(v3)))) ;
   }
 
+  public String classify() {
+    String result = "" ;
+    if ((v1.distanceTo(v2)
+      == v2.distanceTo(v3))
+      && (v2.distanceTo(v3)
+      == v1.distanceTo(v3)))
+        result = "Equilateral" ;
 
+    if (
+      ((v1.distanceTo(v2)
+      == v2.distanceTo(v3))
+      && (v2.distanceTo(v3)
+      != v1.distanceTo(v3)))
+
+      || ((v2.distanceTo(v3)
+      == v1.distanceTo(v3))
+      && (v2.distanceTo(v3)
+      != v1.distanceTo(v2)))
+
+      || ((v1.distanceTo(v2)
+      == v1.distanceTo(v3))
+      && (v1.distanceTo(v2)
+      != v2.distanceTo(v3)))
+        )
+        result = "Isosceles" ;
+
+    else result = "Scalene" ;
+    return result ;
+  }
 
 }
