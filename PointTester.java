@@ -13,6 +13,7 @@ public class PointTester {
     System.out.println(t1.getPerimeter()) ;
     System.out.println(t1.getArea()) ;
     System.out.println(t1.classify()) ;
+    System.out.println(t1.toString()) ;
   }
 
 }
