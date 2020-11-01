@@ -14,6 +14,12 @@ public class PointTester {
     System.out.println(t1.getArea()) ;
     System.out.println(t1.classify()) ;
     System.out.println(t1.toString()) ;
+    Point p5 = new Point (-1.0,-1.0) ;
+    t1.setVertex(1, p5) ;
+    System.out.println(t1.getPerimeter()) ;
+    System.out.println(t1.getArea()) ;
+    System.out.println(t1.classify()) ;
+    System.out.println(t1.toString()) ;
   }
 
 }
