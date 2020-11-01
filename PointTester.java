@@ -5,6 +5,9 @@ public class PointTester {
     System.out.println(p1.getY()) ;
     Point p2 = new Point(0.0,0.0) ;
     System.out.println(p1.distanceTo(p2)) ;
+    Point p3 = new Point(0.0,0.0) ;
+    System.out.println(p1.equals(p2)) ;
+    System.out.println(p2.equals(p3)) ;
   }
 
 }
